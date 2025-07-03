@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Profile Selection Screen -->
+  <div id="profile-screen" class="profile-screen">
+    <h1>Who's watching?</h1>
+    <div class="profiles">
+      <div class="profile" data-profile="1"><img src="images/profile1.png" alt="Profile 1"><span>Alex</span></div>
+      <div class="profile" data-profile="2"><img src="images/profile2.png" alt="Profile 2"><span>Sam</span></div>
+      <div class="profile" data-profile="3"><img src="images/profile3.png" alt="Profile 3"><span>Jamie</span></div>
+    </div>
+  </div>
+
+  <!-- Main Netflix UI -->
+  <div id="main-app" style="display:none;">
+    <header>
+      <div class="logo">NETFLIX</div>
+      <nav>
+        <a href="#" id="home-link">Home</a>
+        <a href="#" id="my-list-link">My List</a>
+      </nav>
+      <input type="text" id="search-bar" placeholder="Search...">
+      <div class="profile-mini" id="profile-mini">
+        <img src="images/profile1.png" alt="Profile Mini">
+      </div>
+    </header>
+    <main>
+      <section id="rows-container"></section>
+    </main>
+  </div>
+
+  <!-- Movie Details Modal -->
+  <div id="details-modal" class="modal">
+    <div class="modal-content details-modal-content">
+      <span class="close" id="close-details">&times;</span>
+      <img id="details-image" src="" alt="Movie Poster">
+      <h2 id="details-title"></h2>
+      <p id="details-description"></p>
+      <p id="details-genre"></p>
+      <div class="modal-actions">
+        <button id="play-button">Play</button>
+        <button id="add-list-button">Add to My List</button>
+        <button id="like-button">👍</button>
+        <button id="dislike-button">👎</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Player Modal -->
+  <div id="video-modal" class="modal">
+    <div class="modal-content video-content">
+      <span class="close" id="close-video">&times;</span>
+      <video id="video-player" controls></video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 

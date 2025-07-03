@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "The Great Adventure",
+    "description": "An epic journey of discovery and friendship.",
+    "genre": "Adventure",
+    "image": "images/movie1.jpg",
+    "video": "videos/movie1.mp4"
+  },
+  {
+    "id": 2,
+    "title": "Mystery Manor",
+    "description": "A thrilling mystery in a haunted mansion.",
+    "genre": "Mystery",
+    "image": "images/movie2.jpg",
+    "video": "videos/movie2.mp4"
+  },
+  {
+    "id": 3,
+    "title": "Space Odyssey",
+    "description": "A voyage through the stars and beyond.",
+    "genre": "Sci-Fi",
+    "image": "images/movie3.jpg",
+    "video": "videos/movie3.mp4"
+  }
+] 
