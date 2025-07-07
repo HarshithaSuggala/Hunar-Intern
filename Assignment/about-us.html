@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;500;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #e7dfda;
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto 0 auto;
+      background: #e7dfda;
+      border-radius: 24px;
+      display: flex;
+      gap: 40px;
+      padding: 40px 40px 0 40px;
+      box-sizing: border-box;
+    }
+    .left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .phone-img {
+      width: 320px;
+      height: auto;
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .right {
+      flex: 1.2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .right h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0 0 10px 0;
+      color: #222;
+    }
+    .right h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 12px 0;
+      color: #222;
+    }
+    .right p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+    .right .credit {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 18px;
+    }
+    .right .credit a {
+      color: #222;
+      text-decoration: underline;
+    }
+    .contact-btn {
+      background: #111;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 14px 36px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 24px;
+      transition: background 0.2s;
+      width: fit-content;
+    }
+    .contact-btn:hover {
+      background: #333;
+    }
+    .info-cards {
+      display: flex;
+      gap: 24px;
+      margin: 40px auto 0 auto;
+      max-width: 1000px;
+      justify-content: center;
+    }
+    .card {
+      background: #ff7f32;
+      color: #fff;
+      border-radius: 18px;
+      flex: 1;
+      min-width: 220px;
+      padding: 28px 24px 20px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    }
+    .card svg {
+      width: 28px;
+      height: 28px;
+      margin-bottom: 12px;
+      fill: #fff;
+    }
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .card-text {
+      font-size: 0.98rem;
+      line-height: 1.5;
+      color: #fff;
+    }
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        padding: 24px 8px 0 8px;
+        gap: 24px;
+      }
+      .info-cards {
+        flex-direction: column;
+        gap: 18px;
+        padding: 0 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="phone-img">
+        <!-- Placeholder phone image -->
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Phone in hand" style="width:100%;height:auto;">
+      </div>
+    </div>
+    <div class="right">
+      <h1>About Us</h1>
+      <h2>Sample Headline</h2>
+      <p>Article evident arrived express highest men did boy. Mattress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. Oh feel if up to till like.</p>
+      <div class="credit">Image from <a href="https://freepik.com" target="_blank">Freepik</a></div>
+      <button class="contact-btn">CONTACT US</button>
+    </div>
+  </div>
+  <div class="info-cards">
+    <div class="card">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"></path></svg>
+      <div class="card-title">CALL US</div>
+      <div class="card-text">1 (234) 567-891<br>1 (234) 987-654</div>
+    </div>
+    <div class="card">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+      <div class="card-title">LOCATION</div>
+      <div class="card-text">123 Rock Street, 21 Avenue, New York, NY<br>12345-6789</div>
+    </div>
+    <div class="card">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2" fill="none" stroke="#fff" stroke-width="2"/></svg>
+      <div class="card-title">HOURS</div>
+      <div class="card-text">Mon - Fri: 11am - 8pm, Sat - Sun: 6am - 8pm</div>
+    </div>
+  </div>
+</body>
+</html> 
